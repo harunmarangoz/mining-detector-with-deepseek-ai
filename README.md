@@ -2,17 +2,21 @@
 
 Bu proje, `.NET 9`, **Ollama** ve **DeepSeek-R1** kullanarak log kayıtlarında kripto madenciliği (crypto mining) faaliyetlerini tespit etmeye yönelik bir demo uygulamadır.
 
-## Kurulum
-1. **Ollama Kurulumu**: [Ollama](https://ollama.com/) uygulamasını indirip kurun.
 
 ### Ollama ve DeepSeek-R1 Kurulumu
-1. Ollama'yı resmi sitesinden indirin ve kurun.
+1. [Ollama](https://ollama.com/)'yı resmi sitesinden indirin ve kurun.
 2. Terminalden modeli indirin:```ollama pull eepseek-r1:7b```
 > Daha güçlü bir model için: deepseek-r1:32b
 3. Modelin yüklendiğini kontrol etmek için şu adresi ziyaret edin: ```http://localhost:11434/api/tags```
 
 ### Proje Kurulumu
-1. 
+1. `git clone https://github.com/harunmarangoz/mining-detector-with-deepseek-ai.git`
+2. `cd mining-detector-with-deepseek-ai`
+3. `dotnet run`
+4. Tarayıcıda `http://localhost:5227/swagger` adresine gidin.
 
-prompt hakkinda detayli bilgi için [PROMPT.md](PROMPT.md) dosyasına bakabilirsiniz.
+### Kullanım
+`/api/ai-analyse/file` endpoint'ine log dosyanızla birlikte POST isteği göndererek analiz başlatabilirsiniz.
+
+prompt hakkında detaylı bilgi için [PROMPT.md](PROMPT.md) dosyasına bakabilirsiniz.
 
